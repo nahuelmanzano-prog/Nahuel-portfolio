@@ -553,6 +553,32 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
  #proyectos .case-open-copy small{font-size:10px}
 }
 
+
+/* Experience refinements: concise Carrefour evidence + Unilever achievements */
+.exp-summary{margin-top:22px;border-top:1px solid #e4e4e8;padding:19px 0 2px}
+.exp-summary-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:16px}
+.exp-summary-title strong{font-size:14px;letter-spacing:-.02em;color:#303036}
+.exp-summary-title span{font-size:11px;color:#86868b}
+.exp-summary-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.exp-summary-facts>div{min-width:0;padding:15px 16px;background:#f5f5f7;border-radius:13px;display:flex;flex-direction:column;gap:5px}
+.exp-summary-facts strong{font-size:20px;line-height:1.1;letter-spacing:-.04em;color:#1d1d1f}
+.exp-summary-facts span{font-size:11px;color:#6e6e73;line-height:1.45}
+.exp-summary-link{display:inline-flex;gap:6px;align-items:center;margin-top:16px;color:#0071e3;text-decoration:none;font-size:12px;font-weight:650}
+.exp-summary-link:hover{text-decoration:underline;text-underline-offset:3px}
+.exp-unilever>div:nth-child(2)>p{margin-bottom:18px}
+.unilever-achievements{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:22px 0 20px}
+.uni-achievement{border:1px solid #e9e9ed;border-radius:16px;padding:20px;background:#fff}
+.uni-achievement-label{color:#86868b;font-size:10px;letter-spacing:.04em;font-weight:700}
+.uni-achievement h4{color:#1d1d1f;font-size:19px;letter-spacing:-.035em;line-height:1.25;margin:11px 0 8px}
+.uni-achievement p{font-size:12px;line-height:1.65;color:#68686f;margin:0}
+@media(max-width:720px){
+ .exp-summary-title{flex-direction:column;gap:4px}
+ .exp-summary-facts{grid-template-columns:1fr 1fr}
+ .exp-summary-facts>div:last-child{grid-column:1/-1}
+ .unilever-achievements{grid-template-columns:1fr}
+ .uni-achievement{padding:18px}
+}
+
 </style>
 
 </head>
@@ -644,28 +670,38 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
               <div class="journey-focus">Looker Studio · Sheets · BI</div>
             </li>
           </ol>
-          <div class="exp-results" aria-label="Resultados de reporting en Carrefour">
-  <h4>Reporting y Business Intelligence en Marca Propia</h4>
-  <p>Impulsé el desarrollo y la implementación de dashboards interactivos que integran información histórica de ventas y desempeño de marcas. Los reportes comerciales se actualizan mensualmente y son utilizados por aproximadamente 10 profesionales, incluidos gerentes, jefes y directores.</p>
-  <p>En un desarrollo independiente, implementé un reporting CSRD para consolidar y presentar a Casa Matriz aproximadamente 30 indicadores de sostenibilidad. Estas soluciones contribuyeron a simplificar la consolidación de información y reducir tareas manuales de preparación de informes.</p>
-  <div class="exp-result-detail"><strong>Actualización de bases de datos</strong><span>Hasta aproximadamente 90 minutos por ciclo de actualización.</span></div>
-  <p class="exp-skills"><strong>Competencias aplicadas:</strong> Business Intelligence, análisis comercial, visualización de datos, automatización de procesos y mejora continua.</p>
+          <div class="exp-summary reveal" aria-label="Alcance del reporting en Carrefour">
+  <div class="exp-summary-title"><strong>Reporting · Marca Propia</strong><span>Resultados y alcance</span></div>
+  <div class="exp-summary-facts">
+    <div><strong>≈10</strong><span>usuarios internos de reportes comerciales</span></div>
+    <div><strong>Mensual</strong><span>actualización de dashboards comerciales</span></div>
+    <div><strong>≤90 min</strong><span>actualización de bases por ciclo</span></div>
+  </div>
+  <a class="exp-summary-link" href="#proyectos">Ver proyectos y resultados <span aria-hidden="true">↗</span></a>
 </div>
-<div class="exp-synthesis">
-            <span>LO QUE CONECTA LAS TRES ETAPAS</span>
-            <p>No se trata solamente de mostrar datos: se trata de conocer el negocio para identificar qué información es relevante y cómo convertirla en una herramienta de decisión.</p>
-          </div>
         </div>
       </article>
-      <article class="exp">
-        <div class="exp-date">2021 — 2023</div>
-        <div>
-          <h3>Unilever</h3>
-          <div class="exp-role">Merchandiser · Consumo masivo</div>
-          <p>Experiencia en ejecución comercial, lanzamientos, visibilidad de categorías, disponibilidad, precios y seguimiento de punto de venta. Esta etapa construyó la base operativa que hoy complementa mi perfil analítico.</p>
-          <div class="tags"><span>FMCG</span><span>Ejecución comercial</span><span>Categorías</span><span>Lanzamientos</span><span>Reporting</span></div>
-        </div>
-      </article>
+      <article class="exp exp-unilever">
+  <div class="exp-date">2021 — 2023</div>
+  <div>
+    <h3>Unilever</h3>
+    <div class="exp-role">Merchandiser · Consumo masivo</div>
+    <p>Experiencia en ejecución comercial y gestión del punto de venta, con foco en visibilidad de marcas, disponibilidad, exhibición y lanzamientos. Implementé mejoras de exhibición en tiendas estratégicas y trabajé para sostenerlas en el tiempo.</p>
+    <div class="unilever-achievements" aria-label="Hitos de gestión comercial en Unilever">
+      <div class="uni-achievement">
+        <span class="uni-achievement-label">01 / VISIBILIDAD COMERCIAL</span>
+        <h4>Punteras en tiendas estratégicas</h4>
+        <p>Gestioné la implementación de nuevas exhibiciones en punteras y su continuidad en el punto de venta, fortaleciendo la presencia de las marcas y favoreciendo su participación en tienda.</p>
+      </div>
+      <div class="uni-achievement">
+        <span class="uni-achievement-label">02 / EJECUCIÓN EN GÓNDOLA</span>
+        <h4>Nuevos planogramas</h4>
+        <p>Implementé nuevas disposiciones de productos en góndola para mejorar la organización del espacio, la exhibición y la ejecución de las categorías.</p>
+      </div>
+    </div>
+    <div class="tags"><span>FMCG</span><span>Trade marketing</span><span>Ejecución comercial</span><span>Planogramas</span><span>Visibilidad de marca</span></div>
+  </div>
+</article>
     </div>
   </div>
 </section>
