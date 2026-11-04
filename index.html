@@ -424,6 +424,57 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
   .hero-identity-body h2{font-size:21px}
 }
 
+
+/* Recruiter-focused evidence and project cards, original Apple-style retained. */
+.exp-results{margin-top:26px;background:#fff;border:1px solid #e4e4e9;border-radius:19px;padding:27px 29px}
+.exp-results h4{font-size:23px;letter-spacing:-.04em;line-height:1.22;margin:0 0 13px;color:#1d1d1f}
+.exp-results p{font-size:13px;line-height:1.72;color:#65656c;margin:0 0 12px;max-width:850px}
+.exp-result-detail{display:flex;align-items:center;gap:15px;flex-wrap:wrap;background:#f5f5f7;border-radius:11px;padding:14px 17px;margin:16px 0}
+.exp-result-detail strong{font-size:12px;color:#1d1d1f}
+.exp-result-detail span{font-size:12px;color:#64646a;line-height:1.45}
+.exp-results .exp-skills{color:#52525a;font-size:12px;margin:17px 0 0}
+.case-commercial{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(260px,.78fr);gap:35px;align-items:stretch;background:#fff;border:1px solid rgba(0,0,0,.065);border-radius:29px;padding:34px;min-width:0}
+.case-commercial-copy{padding:8px 0;min-width:0}
+.case-label{display:block;font-size:10px;letter-spacing:.085em;font-weight:750;color:#86868b}
+.case-commercial h3{font-size:clamp(32px,3.7vw,49px);line-height:1.09;letter-spacing:-.055em;margin:19px 0 17px;color:#1d1d1f}
+.case-commercial p{color:#64646b;font-size:14px;line-height:1.7;max-width:610px;margin:0}
+.case-dimensions{display:flex;gap:7px;flex-wrap:wrap;margin:22px 0}
+.case-dimensions span{font-size:10px;color:#57575e;padding:8px 10px;background:#f5f5f7;border-radius:999px}
+.case-commercial .case-purpose{font-size:12px;color:#686871;border-top:1px solid #eeeeef;padding-top:17px;max-width:580px}
+.case-purpose strong{color:#33333a}
+.case-commercial-evidence{background:#f5f5f7;border-radius:21px;padding:22px 24px;display:flex;flex-direction:column;min-width:0}
+.case-evidence-head{font-size:10px;letter-spacing:.07em;font-weight:750;color:#86868b;padding-bottom:14px;border-bottom:1px solid #dcdce2}
+.case-stat{display:grid;grid-template-columns:minmax(85px,.45fr) minmax(0,1fr);gap:17px;align-items:center;padding:20px 0;border-bottom:1px solid #dcdce2}
+.case-stat strong{color:#1d1d1f;font-size:clamp(29px,3vw,42px);letter-spacing:-.06em;line-height:1.05;font-weight:750}
+.case-stat span{font-size:12px;line-height:1.5;color:#62626a}
+.case-evidence-note{margin-top:auto;padding-top:20px;color:#86868b;font-size:10px;line-height:1.5}
+.project-csrd .csrd-indicator{display:flex;align-items:baseline;gap:10px;padding:6px 0 15px}
+.csrd-indicator strong{font-size:40px;letter-spacing:-.07em;font-weight:750;color:#1d1d1f}
+.csrd-indicator span{font-size:11px;color:#86868b}
+.skill-note{font-size:11px;color:#77777e;line-height:1.6;margin:16px 0 0}
+@media(max-width:980px){
+.case-commercial{grid-template-columns:1fr;gap:20px}
+.case-commercial-evidence{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.case-evidence-head,.case-evidence-note{grid-column:1/-1}
+.case-stat{grid-template-columns:1fr;gap:8px}
+}
+@media(max-width:720px){
+.case-commercial{padding:23px;gap:18px;border-radius:24px}
+.case-commercial h3{font-size:34px}
+.case-commercial p{font-size:13px}
+.case-commercial-evidence{padding:19px;gap:0 12px}
+.case-stat strong{font-size:29px}
+.case-stat span{font-size:11px}
+.case-dimensions{margin:17px 0}
+.exp-results{padding:22px 18px}
+.exp-results h4{font-size:21px}
+.exp-result-detail{align-items:start;gap:5px;flex-direction:column}
+}
+@media(max-width:390px){
+.case-commercial-evidence{grid-template-columns:1fr}
+.case-evidence-head,.case-evidence-note{grid-column:auto}
+}
+
 </style>
 
 </head>
@@ -627,7 +678,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 
 
 
-<section class="section" id="capacidades"><div class="shell"><div class="section-head"><div class="section-label reveal">05 / HERRAMIENTAS</div><div><h2 class="section-title reveal">Herramientas, <span>no etiquetas.</span></h2></div></div><div class="skills-grid"><article class="skill reveal"><small>DATA & BI</small><h3>Análisis y visualización</h3><div class="skill-list"><span>Excel</span><span>Google Sheets</span><span>Looker Studio</span><span>Power BI</span><span>MicroStrategy</span></div></article><article class="skill reveal"><small>BUSINESS</small><h3>Negocio y performance</h3><div class="skill-list"><span>Reporting</span><span>KPIs</span><span>Análisis comercial</span><span>Retail</span><span>Business Analysis</span></div></article><article class="skill reveal"><small>AUTOMATION & IA</small><h3>Mejora de procesos</h3><div class="skill-list"><span>Google Apps Script</span><span>Automatización</span><span>IA aplicada</span><span>Prototipado</span><span>Web Apps</span></div></article><article class="skill reveal"><small>ENTERPRISE</small><h3>Ecosistema corporativo</h3><div class="skill-list"><span>SAP S/4HANA</span><span>SAP Ariba</span><span>GS1</span><span>Procesos de negocio</span></div></article></div></div></section>
+<section class="section" id="capacidades"><div class="shell"><div class="section-head"><div class="section-label reveal">05 / HERRAMIENTAS</div><div><h2 class="section-title reveal">Herramientas, <span>no etiquetas.</span></h2></div></div><div class="skills-grid">
+  <article class="skill reveal"><small>HERRAMIENTAS DE USO PROFESIONAL</small><h3>Reporting y visualización</h3><div class="skill-list"><span>Excel</span><span>Google Sheets</span><span>Looker Studio</span><span>MicroStrategy</span></div><p class="skill-note">Power BI: conocimientos adquiridos mediante formación en BI.</p></article>
+  <article class="skill reveal"><small>EXPERIENCIA COMERCIAL</small><h3>Negocio y performance</h3><div class="skill-list"><span>Reporting</span><span>KPIs</span><span>Pricing</span><span>Rentabilidad</span><span>Retail</span><span>Business Analysis</span></div></article>
+  <article class="skill reveal"><small>IA COMO HERRAMIENTA DE APOYO</small><h3>Automatización y procesos</h3><div class="skill-list"><span>Google Workspace</span><span>Apps Script con apoyo de IA</span><span>Automatización</span><span>Prototipado</span></div></article>
+  <article class="skill reveal"><small>EXPERIENCIA EN SISTEMAS</small><h3>Ecosistema corporativo</h3><div class="skill-list"><span>SAP S/4HANA</span><span>SAP Ariba</span><span>GS1</span><span>Procesos de negocio</span></div></article>
+</div></div></section>
 
 
 
@@ -640,7 +696,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
     <div class="contact-label">07 / CONTACTO<br>UN NUEVO PROYECTO EMPIEZA CON UNA CONVERSACIÓN</div>
     <div>
       <h2>¿Conversamos sobre<br>datos y negocio?</h2>
-      <p>Estoy abierto a oportunidades profesionales y a conversar sobre proyectos vinculados con análisis, reporting, automatización y mejora de procesos.</p>
+      <p>Me interesa aportar en equipos de análisis comercial, Business Intelligence, reporting y mejora de procesos. Podés contactarme para conversar sobre oportunidades profesionales o proyectos.</p>
       <div class="hero-actions"><a class="btn primary" href="mailto:nahuelmanzano@gmail.com">Escribime un correo ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/carlos-nahuel-manzano/" target="_blank" rel="noopener noreferrer">Conectemos en LinkedIn ↗</a></div>
     </div>
   </div>
