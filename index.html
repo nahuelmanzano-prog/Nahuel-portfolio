@@ -475,6 +475,84 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .case-evidence-head,.case-evidence-note{grid-column:auto}
 }
 
+
+/* Project evidence cards — distinct reporting and operational cases */
+#proyectos .project-side-stack{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+#proyectos .project-side-stack .project-detail-card{
+  min-height:0;display:flex;flex-direction:column;gap:0;
+  background:#fff;border:1px solid #e7e7eb;border-radius:28px;
+  padding:31px 31px 25px;box-shadow:0 6px 24px rgba(0,0,0,.025)
+}
+#proyectos .project-detail-top small{font-size:10px;letter-spacing:.055em;font-weight:750;color:#86868b}
+#proyectos .project-detail-top h3{font-size:clamp(28px,2.6vw,39px);line-height:1.12;letter-spacing:-.05em;margin:17px 0 12px;color:#1d1d1f}
+#proyectos .project-detail-top p{font-size:13px;line-height:1.68;color:#6e6e73;max-width:600px;margin:0}
+#proyectos .csrd-report-preview{
+  display:grid;grid-template-columns:minmax(145px,.85fr) minmax(0,1.15fr);
+  margin-top:26px;flex:1;gap:12px;
+}
+#proyectos .csrd-report-total{
+  background:#eef6ff;border-radius:18px;padding:22px 19px;display:flex;
+  flex-direction:column;justify-content:center;min-height:174px
+}
+#proyectos .csrd-report-total strong{
+  font-size:clamp(52px,5vw,75px);font-weight:760;letter-spacing:-.085em;
+  color:#0071e3;line-height:1;margin-bottom:12px
+}
+#proyectos .csrd-report-total span{display:block;font-size:13px;font-weight:700;line-height:1.4;color:#1d1d1f}
+#proyectos .csrd-report-total small{font-size:11px;color:#6e6e73;line-height:1.45;display:block;margin-top:3px}
+#proyectos .csrd-report-groups{border:1px solid #e8e8ee;border-radius:18px;padding:18px 17px;min-width:0}
+#proyectos .report-group-title{display:block;font-size:9px;font-weight:750;letter-spacing:.055em;color:#86868b;margin-bottom:12px}
+#proyectos .csrd-report-groups>div{
+  display:grid;grid-template-columns:7px minmax(0,1fr) auto;align-items:center;gap:9px;
+  border-top:1px solid #f0f0f3;padding:12px 0;color:#505058;font-size:11px;line-height:1.35
+}
+#proyectos .report-group-dot{width:6px;height:6px;border-radius:50%;background:#7fb2ea}
+#proyectos .report-group-mark{color:#b1b1b8;font-size:14px}
+#proyectos .automation-cases-preview{margin-top:26px;display:grid;gap:9px;flex:1;align-content:start}
+#proyectos button.case-open.auto-detail{
+  width:100%;min-width:0;border:1px solid #e9e9ee;border-radius:15px;
+  background:#f8f8fa;display:grid;grid-template-columns:34px minmax(0,1fr) auto;
+  align-items:center;gap:12px;padding:14px 13px;text-align:left;
+  color:#1d1d1f;text-decoration:none;cursor:pointer;margin:0;transition:background .2s ease,border-color .2s ease,transform .2s ease
+}
+#proyectos button.case-open.auto-detail:hover{background:#eff6ff;border-color:#c9e2ff;transform:translateY(-1px)}
+#proyectos button.case-open.auto-detail:focus-visible{outline:2px solid #0071e3;outline-offset:3px}
+#proyectos .case-open-icon{font-size:10px;font-weight:760;color:#0071e3;background:#e6f2ff;width:34px;height:34px;border-radius:10px;display:grid;place-items:center}
+#proyectos .case-open-copy{min-width:0;display:flex;flex-direction:column;gap:3px}
+#proyectos .case-open-copy strong{font-size:13px;letter-spacing:-.02em;font-weight:700;line-height:1.25;white-space:normal}
+#proyectos .case-open-copy small{font-size:10px;font-weight:450;line-height:1.4;color:#777780}
+#proyectos .case-open-meta{grid-column:2/3;grid-row:2;color:#0071e3;font-size:10px;font-weight:700;margin-top:-5px}
+#proyectos .case-open-arrow{grid-column:3;grid-row:1;color:#0071e3;font-size:17px;font-weight:500}
+#proyectos .project-detail-bottom{
+  border-top:1px solid #eeeef1;margin-top:24px;padding-top:17px;
+  display:grid;grid-template-columns:72px minmax(0,1fr);gap:12px;align-items:start
+}
+#proyectos .project-detail-bottom>span{color:#0071e3;font-size:10px;font-weight:750;letter-spacing:.055em}
+#proyectos .project-detail-bottom p{font-size:11px;color:#75757c;line-height:1.55;margin:0}
+@media(max-width:1080px){
+ #proyectos .csrd-report-preview{grid-template-columns:1fr}
+ #proyectos .csrd-report-total{min-height:135px;flex-direction:row;align-items:center;gap:18px;justify-content:start}
+ #proyectos .csrd-report-total strong{margin:0}
+}
+@media(max-width:820px){
+ #proyectos .project-side-stack{grid-template-columns:1fr}
+ #proyectos .csrd-report-preview{grid-template-columns:minmax(130px,.75fr) minmax(0,1.25fr)}
+ #proyectos .csrd-report-total{flex-direction:column;align-items:start;gap:0;justify-content:center}
+ #proyectos .csrd-report-total strong{margin-bottom:10px}
+}
+@media(max-width:520px){
+ #proyectos .project-side-stack .project-detail-card{padding:23px 20px;border-radius:23px}
+ #proyectos .project-detail-top h3{font-size:30px}
+ #proyectos .csrd-report-preview{grid-template-columns:1fr}
+ #proyectos .csrd-report-total{min-height:130px;flex-direction:row;gap:20px;align-items:center}
+ #proyectos .csrd-report-total strong{margin:0;font-size:60px}
+ #proyectos .csrd-report-groups{padding:15px}
+ #proyectos .project-detail-bottom{grid-template-columns:1fr;gap:6px}
+ #proyectos button.case-open.auto-detail{gap:9px;padding:12px 10px}
+ #proyectos .case-open-copy strong{font-size:12px}
+ #proyectos .case-open-copy small{font-size:10px}
+}
+
 </style>
 
 </head>
@@ -618,9 +696,53 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
     <div class="app-mock" aria-hidden="true"><div class="mock-top"><span><i></i> ChartApp</span><span>Visualización de datos</span><span>•••</span></div><div class="mock-body"><aside class="mock-side"><b>Propiedades</b><label>Tipo de gráfico</label><div class="mock-select">Barras horizontales <span>⌄</span></div><label>Dimensión</label><div class="mock-select">Universo <span>⌄</span></div><label>Métrica</label><div class="mock-select">Venta <span>⌄</span></div><div class="mock-toggle"><span>Mostrar etiquetas</span><i></i></div><div class="mock-toggle"><span>Mostrar leyenda</span><i></i></div><label>Paleta</label><div class="palette"><i></i><i></i><i></i><i></i></div></aside><div class="mock-main"><div class="mock-main-head"><div><small>PREVIEW</small><b>Venta por universo</b></div><span>Exportar gráfico</span></div><div class="bar-preview"><div><label>Bebidas</label><i style="--w:88%"></i><b>88</b></div><div><label>Almacén</label><i style="--w:73%"></i><b>73</b></div><div><label>Limpieza</label><i style="--w:64%"></i><b>64</b></div><div><label>Perfumería</label><i style="--w:49%"></i><b>49</b></div><div><label>Frescos</label><i style="--w:35%"></i><b>35</b></div></div></div></div></div>
     <div class="feature-visual-note">Vista representativa de interfaz · Mini demo con datos ficticios</div>
   </article>
-  <div class="project-side-stack">
-    <article class="project-side project-csrd reveal"><small>03 / REPORTING · SOSTENIBILIDAD</small><h3>Reporting CSRD</h3><div class="csrd-indicator"><strong>≈30</strong><span>KPIs de sostenibilidad</span></div><p>Solución independiente del reporting comercial para consolidar y organizar aproximadamente 30 indicadores clave, facilitando el seguimiento y la elaboración de informes para Casa Matriz.</p><div class="csrd-kpi-list"><span>Packaging y materiales</span><span>Reciclabilidad y reutilización</span><span>Información de sostenibilidad</span><span>Reporte para Casa Matriz</span></div><div class="project-note"><b>RESULTADO</b><span>Información más accesible, organizada y preparada para su presentación en informes de seguimiento.</span></div></article>
-    <article class="project-side reveal"><small>04 / PROCESOS · OPERACIONES</small><h3>Automatización de procesos</h3><p>Impulso soluciones de automatización con asistencia de IA que reducen tareas manuales, mejoran la calidad de los datos y agilizan los procesos operativos.</p><a class="project-link" href="#automatizacion">Conocer los casos ↗</a><div class="side-viz flow-viz"><span>Entrada</span><i>→</i><span>Proceso</span><i>→</i><span>Salida</span></div></article>
+  <div class="project-side-stack" aria-label="Otros proyectos destacados">
+    <article class="project-side project-csrd project-detail-card reveal">
+      <div class="project-detail-top">
+        <small>03 / REPORTING · SOSTENIBILIDAD</small>
+        <h3>Reporting CSRD</h3>
+        <p>Consolidación de indicadores de sostenibilidad para facilitar su seguimiento y la elaboración de informes destinados a Casa Matriz.</p>
+      </div>
+      <div class="csrd-report-preview" aria-label="Alcance del reporting CSRD">
+        <div class="csrd-report-total">
+          <strong>≈30</strong>
+          <div><span>Indicadores clave</span><small>KPIs de sostenibilidad</small></div>
+        </div>
+        <div class="csrd-report-groups">
+          <span class="report-group-title">INFORMACIÓN CONSOLIDADA</span>
+          <div><span class="report-group-dot"></span><span>Packaging y materiales</span><span class="report-group-mark" aria-hidden="true">↗</span></div>
+          <div><span class="report-group-dot"></span><span>Reciclabilidad y reutilización</span><span class="report-group-mark" aria-hidden="true">↗</span></div>
+          <div><span class="report-group-dot"></span><span>Seguimiento para Casa Matriz</span><span class="report-group-mark" aria-hidden="true">↗</span></div>
+        </div>
+      </div>
+      <div class="project-detail-bottom"><span>APORTE</span><p>Información estructurada y más accesible para preparar reportes y consultar indicadores.</p></div>
+    </article>
+    <article class="project-side project-automation project-detail-card reveal">
+      <div class="project-detail-top">
+        <small>04 / PROCESOS · OPERACIONES</small>
+        <h3>Automatización de procesos</h3>
+        <p>Soluciones implementadas con apoyo de IA para agilizar tareas operativas, mejorar los controles y reducir la carga manual de información.</p>
+      </div>
+      <div class="automation-cases-preview" aria-label="Explorar automatizaciones">
+        <button class="case-open auto-detail" type="button" data-auto="ocr" aria-label="Ver funcionamiento de OCR de facturas">
+          <span class="case-open-icon" aria-hidden="true">01</span>
+          <span class="case-open-copy"><strong>OCR de facturas</strong><small>Extracción de datos de PDF hacia Sheets</small></span>
+          <span class="case-open-meta">≈50% del trabajo agilizado</span>
+          <span class="case-open-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="case-open auto-detail" type="button" data-auto="altas" aria-label="Ver funcionamiento del alta de productos">
+          <span class="case-open-icon" aria-hidden="true">02</span>
+          <span class="case-open-copy"><strong>Altas de productos</strong><small>Validaciones, EAN y duplicados</small></span>
+          <span class="case-open-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="case-open auto-detail" type="button" data-auto="presentaciones" aria-label="Ver funcionamiento del generador de presentaciones">
+          <span class="case-open-icon" aria-hidden="true">03</span>
+          <span class="case-open-copy"><strong>Generador de presentaciones</strong><small>De Sheets y Drive a Slides</small></span>
+          <span class="case-open-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="project-detail-bottom"><span>EXPLORAR</span><p>Seleccioná un caso para conocer el proceso, los pasos y las herramientas utilizadas.</p></div>
+    </article>
   </div>
 </div></div></section>
 
